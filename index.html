@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelements</title>
+    <style>
+        @keyframes color{
+            from{background-color: aqua;}
+            to{background-color: azure;}
+
+        }
+       
+        @keyframes color{
+            10%{background-image:url("./download.jpeg");}
+            20%{background-image:url("./download\ \(1\).jpeg") ;}
+            30%{background-image:url("./images.jpeg") ;}
+            40%{background-image:url("./download.jpeg") ;}
+            50%{background-image:url("../day16/images.jpeg") ;}
+            60%{background-image:url("./KTM-Duke-200-BS6.webp") ;}
+            70%{background-image:url("./kawasaki-ninja-300-lime-green-ebony_1613968175881_1613968184978.webp") ;}
+            80%{background-image: url("./yamaha-fzs-fi-new-bike-500x500.webp");}
+            90%{background-image:url("./download\ \(1\).jpeg") ;}
+            100%{background-image:url("./images.jpeg") ;}
+           
+
+        }
+        
+        .color{
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+            animation-name: color;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-repeat: no-repeat;
+            background-size: cover;background-position: center;
+            align-items: center;
+        }
+        .ball{
+            border: 1px solid blue;
+        }
+        .ball1,.ball2,.ball3,.ball4,.ball6{
+            border: 1px solid black;
+            border-radius: 100px;
+            height: 80px;
+            width: 80px;
+            display: flex;
+           margin: 20px;
+           background-color: aqua;
+           align-items: center;
+            
+        }
+        @keyframes ball1 {
+            from {
+                transform: translate(20px,30px);
+                background-color:darkgreen;
+            }
+            to {
+                transform: translate(80px,90px);
+                background-color:darkblue;
+            }
+        }
+        .ball1 {
+            animation-name: ball1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-repeat: no-repeat;
+        }
+        @keyframes ball2 {
+            from {
+                transform: translate(50px,30px);
+                background-color:darkred;
+            }
+            to {
+                transform: translate(80px,10px);
+                background-color:deepskyblue;
+            }
+        }
+        .ball2 {
+            animation-name: ball2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        @keyframes ball3 {
+            from {
+                transform: translate(200px,100px);
+                background-color:blue;
+            }
+            to {
+                transform: translate(100px,100px);
+                background-color:chocolate;
+            }
+        }
+        .ball3 {
+            animation-name: ball3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+           
+        }
+        @keyframes ball4{
+            from {
+                transform: translate(50px,30px);
+                background-color:azure;
+                transform: rotate(0deg);
+                transform: translate(50);
+            }
+            to {
+                transform: translate(100px,100px);
+                background-color:chartreuse;
+            }
+        }
+        .ball4{
+            animation-name: ball4;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+                  
+        }
+        
+        
+        @keyframes ball6{
+            from {
+                transform: translate(50px,30px);
+                background-color:darkgoldenrod;
+            }
+            to {
+                transform: translate(40px,200px);
+                background-color:aqua;
+            }
+        }
+        .ball6 {
+            animation-name: ball6;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-repeat: no-repeat;
+        }
+        h1::first-line{
+            background-color: aqua;
+
+        }
+        h2::first-letter{
+            background-color: blue;
+        }
+        span::before{
+            content: url(./download.jpeg);
+        }
+        li::marker{
+            background-color: skyblue;
+            color: red;
+            
+        }
+        b::selection{
+            background-color: darkgoldenrod;
+        }
+        p::selection{
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>bikes</h1>
+    <div class="color">
+        
+
+    </div>
+    <div class="ball">
+        <div class="ball1"></div>
+        <div class="ball1"></div>
+        <div class="ball3"></div>
+        <div class="ball4"></div>
+        <div class="ball6"></div>
+        
+    </div>
+    <div>
+   <h1>pseudoelements</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores doloremque odio obcaecati sunt sapiente illum enim commodi. Debitis, eius. Commodi exercitationem quis, ullam saepe ea veritatis dicta nihil magnam?</p>
+   <h2>10k coders</h2>
+   <span>R15:</span><br>
+   <b>venkatreddy</b>
+   <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+   </ol>
+</div>
+</body>
+</html>
